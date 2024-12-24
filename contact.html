@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PearlCare</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="shortcut icon" href="favicon.svg" />
+  <script src="https://kit.fontawesome.com/6c53136549.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <div class="header">
+    <nav>
+      <div class="nav-content">
+        <div class="logo  animate fadeLeft">
+          <a href="index.html">
+            <img src="img/pc logo.svg" alt="" class="" />
+          </a>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links animate fadeRight">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="jobs.html">Job Search</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button onclick="window.open('Application-form.pdf', '_blank')">
+              Download Application
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- header -->
+    <div class="contact-container">
+      <div class="contact-image-div">
+        <div class="contact-content animate fadeInUp">
+          <p>Contact Us</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- {/* contact section div */} -->
+
+  <div class="contact-section-div  animate fadeLeft">
+    <div class="home-contact-section">
+      <div class="contact-intro">
+        <p class="home-contact-first-tsxt animate fadeInUp">Come visit us at</p>
+        <h1 class=" animate fadeInUp">Our Head Office</h1>
+        <div class="contactss">
+          <div class="home-contact-item">
+            <img src="img/location.png" alt="" class="contactpage-img" />
+            <div class="contact-adress-section animate fadeLeft">
+              <h6>Chapel Road</h6>
+              <p>
+                213 A Chapel House , 1-6 Chapel
+                <br />
+                Road, Worthing , BN111AY
+              </p>
+            </div>
+          </div>
+          <div class="home-contact-item">
+            <img src="img/telephone.png" alt="" class="contactpage-img" />
+            <div class="contact-adress-section animate fadeLeft">
+              <h6>Phone Line:</h6>
+              <!-- <p>Mob: +44 7341640531</p> -->
+              <p>Tel: 03303110727</p>
+            </div>
+          </div>
+          <!-- <div class="home-contact-item">
+            <img src="img/telephone.png" alt="" class="contactpage-img" />
+            <div class="contact-adress-section animate fadeLeft">
+              <h6>Phone Line:</h6>
+              <p>+447341640531</p>
+            </div>
+          </div> -->
+          <div class="home-contact-item">
+            <img src="img/mail .png" alt="" class="contactpage-img" />
+            <div class="contact-adress-section animate fadeLeft">
+              <h6>Email Address:</h6>
+              <p>info@pearlcarerecruitment.co.uk</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="contact-intro">
+        <p class="home-contact-first-tsxt animate fadeInUp">&nbsp</p>
+        <h1 class=" animate fadeInUp">Branch Office</h1>
+        <div class="contactss">
+          <div class="home-contact-item">
+            <img src="img/location.png" alt="" class="contactpage-img" />
+            <div class="contact-adress-section animate fadeLeft">
+              <h6>YEOVIl AREA</h6>
+              <p>
+                34 Crofton Ave, Yeovil ,
+                <br />
+                BA214DL
+              </p>
+            </div>
+          </div>
+          <div class="home-contact-item">
+            <img src="img/registered.png" alt="" class="contactpage-img" />
+            <div class="contact-adress-section animate fadeLeft">
+              <h6>Registeration No:</h6>
+              <p>14084555 <br>&nbsp;<br> </p>
+            </div>
+          </div>
+          <div class="home-contact-item">
+            <img src="img/mail .png" alt="" class="contactpage-img" />
+            <div class="contact-adress-section animate fadeLeft">
+              <h6>Email Address:</h6>
+              <p>admin@pearlcarerecruitment.co.uk</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <div class="contact-form-div  animate fadeInUp">
+        <form action="contact.php" method="POST" id="contactForm">
+          <div class="form-group animate fadeRight">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="form-group animate fadeLeft">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="form-group animate fadeRight">
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" />
+          </div>
+
+          <div class="form-group animate fadeLeft">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+
+          <div class="form-group animate fadeRight">
+            <button class="btn" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="map-section animate fadeInUp" style="margin: 50px">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2521.0515451140022!2d-0.3727672234213905!3d50.81168367166338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTDCsDQ4JzQyLjEiTiAwwrAyMicxMi43Ilc!5e0!3m2!1sen!2sin!4v1704864966789!5m2!1sen!2sin"
+      width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+
+  <!-- Footer Section Begin -->
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 col-md-4">
+          <h6>
+            <i class="fa-solid fa-location-dot" style="color: #2b72ee; padding-right: 5px"></i>Address
+          </h6>
+          <p class="text-justify">
+            213 A Chapel House , 1-6 Chapel Road , <br />
+            Worthing , BN111AY.
+          </p>
+
+          <h6>
+            <i class="fa-solid fa-envelope" style="color: #2b72ee; padding-right: 5px"></i>Email Us
+          </h6>
+          <p class="text-justify"><a href="mailto:info@pearlcarerecruitment.co.uk">info@pearlcarerecruitment.co.uk</a>
+          </p>
+          <!-- <p class="text-justify"><a href="mailto:info@pearlcarerecruitment.co.uk">admin@pearlcarerecruitment.co.uk</a>
+          </p> -->
+
+          <!-- <h6>
+            <i class="fa-solid fa-phone" style="color: #2b72ee; padding-right: 5px"></i>Phone
+          </h6>
+          <p class="text-justify"> <a href="tel:+447341640531"> +447341640531</a></p> -->
+          <h6>
+            <i class="fa-solid fa-phone" style="color: #2b72ee; padding-right: 5px"></i>Phone
+          </h6>
+          <p class="text-justify"> <a href="tel:+03303110727">Tel:
+              03303110727</a></p>
+          <h6>
+            <i class="fa-regular fa-registered" style="color: #2b72ee; padding-right: 5px"></i>Registeration No:
+          </h6>
+          <p class="text-justify">14084555</p>
+        </div>
+        <!-- <div class="col-xs-6 col-md-3">
+          <h6>
+            <i class="fa-solid fa-location-dot" style="color: #2b72ee; padding-right: 5px"></i>YEOVIl AREA
+          </h6>
+          <p class="text-justify">
+            34 Crofton Ave, Yeovil , <br />
+            BA214DL
+          </p>
+
+          <h6>
+            <i class="fa-solid fa-envelope" style="color: #2b72ee; padding-right: 5px"></i>Email Us
+          </h6>
+          <p class="text-justify"><a href="mailto:admin@pearlcarerecruitment.co.uk">admin@pearlcarerecruitment.co.uk</a>
+          </p>
+
+          <h6>
+            <i class="fa-regular fa-registered" style="color: #2b72ee; padding-right: 5px"></i>Registeration No:
+          </h6>
+          <p class="text-justify">14084555</p>
+        </div> -->
+
+        <div class="col-xs-6 col-md-4">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <a href="services.html">
+              <li>HealthCare Assistant</li>
+            </a>
+            <a href="services.html">
+              <li>Domestic Workers</li>
+            </a>
+            <a href="services.html">
+              <li>Nurses</li>
+            </a>
+            <a href="services.html">
+              <li>Senior HealthCare Assistant</li>
+            </a>
+            <a href="services.html">
+              <li>Chefs/Catering Assistants</li>
+            </a>
+          </ul>
+        </div>
+
+
+        <div class="col-xs-6 col-md-4">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+            <li>
+              <a href="jobs.html">Job Search</a>
+            </li>
+            <li><a href="">Sitemap</a></li>
+            <li><a target="_blank" href="Application-form.pdf">Download Application</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">
+            Copyright &copy; 2024
+            <a href="#" style="text-decoration: none">Pearlcare </a>|
+            Developed by
+            <a href="https://illforddigital.com/" target="_blank">Illford Digital</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li>
+              <a class="facebook" href="https://www.facebook.com/profile.php?id=61554914865608" target="_blank"><i
+                  class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a class="linkedin"
+                href="https://www.instagram.com/pearlcarerecruitment/profilecard/?igsh=c3VpNGNzajJta244"
+                target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--<div class="floating_btn">-->
+  <!--  <a target="_blank" href="https://wa.me/+447341640531" style="text-decoration: none;">-->
+  <!--    <div class="contact_icon">-->
+  <!--      <i class="fa fa-whatsapp my-float"></i>-->
+  <!--    </div>-->
+  <!--  </a>-->
+  <!--  <p class="text_icon">Talk to us?</p>-->
+  <!--</div>-->
+
+  <!-- script -->
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("show");
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="js/fade-animate.js"></script>
+</body>
+
+</html>
